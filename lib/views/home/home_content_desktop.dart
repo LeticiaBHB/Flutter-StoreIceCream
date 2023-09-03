@@ -20,7 +20,8 @@ class HomeContentDesktop extends StatelessWidget {
       children: <Widget> [
         CourseDetails(),
         SizedBox(height: 100),
-        Center(
+        Container(
+          alignment: Alignment.center,
           child: GestureDetector(
             onTap: () => _launchURL(githubUrl),
             child:CallToAction('Meus projetos'),

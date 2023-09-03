@@ -23,11 +23,13 @@ class CourseDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'Desenvolvedora \n ❤️',
-                style: TextStyle(
-                    fontWeight: FontWeight.w800, height: 0.9, fontSize: titleSize),
-                textAlign: textAligment,
+              Center(
+                child: Text(
+                  'Desenvolvedora \n ❤️',
+                  style: TextStyle(
+                      fontWeight: FontWeight.w800, height: 0.9, fontSize: titleSize),
+                  textAlign: textAligment,
+                ),
               ),
               SizedBox(height: 30),
               Text(

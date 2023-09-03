@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterweb/constants/app_colors.dart';
 class CallToActionMobile extends StatelessWidget {
   final String title;
   const CallToActionMobile(this.title);
@@ -18,7 +17,7 @@ class CallToActionMobile extends StatelessWidget {
         ),
       ),
       decoration: BoxDecoration(
-          color: primaryColor,
+          color: Colors.greenAccent,
         borderRadius: BorderRadius.circular(5)),
     );
   }

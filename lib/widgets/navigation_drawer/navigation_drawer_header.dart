@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterweb/constants/app_colors.dart';
 
 class NavigationDrawerHeader extends StatelessWidget {
   const NavigationDrawerHeader({super.key});
@@ -8,7 +7,7 @@ class NavigationDrawerHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 150,
-        color: primaryColor,
+        color: Colors.greenAccent[200],
       alignment: Alignment.center,
       child: Column(
         mainAxisSize: MainAxisSize.min,
