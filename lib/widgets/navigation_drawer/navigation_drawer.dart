@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterweb/widgets/navigation_drawer/drawer_item.dart';
 import 'package:flutterweb/widgets/navigation_drawer/navigation_drawer_header.dart';
 
-class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({super.key});
+class NavigatDrawer extends StatelessWidget {
+  const NavigatDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
