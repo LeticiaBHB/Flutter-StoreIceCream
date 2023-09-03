@@ -1,11 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutterweb/locator.dart';
+import 'package:flutterweb/services/navigation_service.dart';
 
 class NavBarItem extends StatelessWidget {
   final String title;
-  const NavBarItem(this.title);
+  final String navigationPath;
+  const NavBarItem(this.title, this.navigationPath);
 
   @override
   Widget build(BuildContext context) {
-    return Text(title, style: TextStyle(fontSize: 18));
+    Navigator.of(context).pushNamed('protifólio');
+   return GestureDetector(
+     onTap:(){
+       locator<NavigationService>().navigateTo(navigationPath);
+     },
+     child: Text(
+       title,
+       style: TextStyle(fontSize: 18),
+     ),
+   );
   }
 }
