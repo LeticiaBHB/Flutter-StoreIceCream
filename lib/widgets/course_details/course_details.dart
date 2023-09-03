@@ -6,7 +6,7 @@ class CourseDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ReponsiveBuilder(
+    return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         var textAligment = sizingInformation.deviceScreenType == DeviceScreenType.Desktop
             ? TextAlign.left
@@ -17,7 +17,7 @@ class CourseDetails extends StatelessWidget {
         double descriptionSize = sizingInformation.deviceScreenType == DeviceScreenType.mobile
             ? 16
             : 21;
-        Container(
+       return Container(
           width: 600,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,7 +39,7 @@ class CourseDetails extends StatelessWidget {
               ),
             ],
           ),
-        ),
+        );
       }
     );
   }
