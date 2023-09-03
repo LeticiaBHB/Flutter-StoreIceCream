@@ -22,7 +22,7 @@ class NavigatDrawer extends StatelessWidget {
       child: Column(
         children: [
           NavigationDrawerHeader(),
-          DrawerItem('Portifólio', Icons.videocam, EpisodesRoute),
+          DrawerItem('Episodes', Icons.videocam, EpisodesRoute),
           DrawerItem('About', Icons.help, AboutRoute)
         ],
       ),

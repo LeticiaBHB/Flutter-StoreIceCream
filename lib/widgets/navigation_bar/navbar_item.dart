@@ -9,7 +9,7 @@ class NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Navigator.of(context).pushNamed('protifólio');
+    Navigator.of(context).pushNamed('Episodes');
    return GestureDetector(
      onTap:(){
        locator<NavigationService>().navigateTo(navigationPath);

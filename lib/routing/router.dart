@@ -20,21 +20,27 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 }
 
 PageRoute _getPageRoute(Widget child) {
-  return _FadeRoute(child);
+  return _FadeRoute(child : child);
 }
 
 class _FadeRoute extends PageRouteBuilder {
   final Widget child;
 
-  _FadeRoute(this.child) :
+  _FadeRoute({required this.child}) :
         super (
-          pageBuilder: (BuildContext context,
+          pageBuilder: (
+              BuildContext context,
               Animation <double> animation,
-              Animation <double> secondaryAnimation,) => child,
-          transitionsBuilder: (BuildContext context,
+              Animation <double> secondaryAnimation,
+              ) => child,
+          transitionsBuilder: (
+              BuildContext context,
               Animation <double> animation,
               Animation <double> secondaryAnimation,
               Widget child,
-              ) => FadeTransition(opacity: animation, child: child,)
+              ) =>
+              FadeTransition(
+                opacity: animation,
+                child: child),
       );
 }
