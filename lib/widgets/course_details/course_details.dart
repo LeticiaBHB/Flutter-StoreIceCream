@@ -25,7 +25,7 @@ class CourseDetails extends StatelessWidget {
             children: [
               Center(
                 child: Text(
-                  'Desenvolvedora \n ❤️',
+                  'Bem vindo!!!',
                   style: TextStyle(
                       fontWeight: FontWeight.w800, height: 0.9, fontSize: titleSize),
                   textAlign: textAligment,
