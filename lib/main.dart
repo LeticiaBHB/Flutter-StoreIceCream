@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutterweb/Portif%C3%B3lio/LojaVirtual.dart';
+import 'package:flutterweb/LojaVirtual.dart';
 import 'package:flutterweb/Responsividade/LayoutBuilder.dart';
 import 'package:flutterweb/Responsividade/Orientacao.dart';
 import 'package:flutterweb/Responsividade/ResponsividadeMediaQuery.dart';
 import 'package:flutterweb/Responsividade/ResponsividadeRowColumn.dart';
 import 'package:flutterweb/Responsividade/responsividade_warp.dart';
-import 'package:flutterweb/home_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
