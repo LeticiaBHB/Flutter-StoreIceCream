@@ -25,7 +25,7 @@ class ItemProduto extends StatelessWidget {
             ),
           ),
           Expanded(flex: 1, child: Text(this.descricao)),
-          Expanded(flex: 1, child: Text('r\$ ${this.preco}', style: TextStyle(fontWeight: FontWeight.bold),),),
+          Expanded(flex: 1, child: Text('\$ ${this.preco}', style: TextStyle(fontWeight: FontWeight.bold),),),
         ],
       ),
     );

@@ -13,12 +13,18 @@ class LojaVirtual extends StatefulWidget {
 class _LojaVirtualState extends State<LojaVirtual> {
   _ajustarVisualizacao(double larguraTela){
     int colunas = 3;
-    if(larguraTela <= 600){
+    if(larguraTela <= 320){
+      colunas = 1;
+    } else if (larguraTela <= 480){
+      colunas = 2;
+    }else if (larguraTela <= 720){
       colunas = 3;
-    } else if (larguraTela <= 960){
+    }else if (larguraTela <= 800){
       colunas = 4;
+    }else if (larguraTela <= 900){
+      colunas = 5;
     } else{
-      colunas = 6;
+      colunas = 8;
     }
     return colunas;
   }
@@ -42,20 +48,20 @@ class _LojaVirtualState extends State<LojaVirtual> {
             crossAxisSpacing: 8,
             mainAxisSpacing: 8,
             children: [
-              ItemProduto("sorvete" , "7", 'sorvete1.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete2.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete3.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete4.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete5.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete6.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete7.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete8.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete9.jpeg'),
-              ItemProduto("sorvete" , "7", 'sorvete10.jpeg'),
-              ItemProduto("Mineral Water" , "7", 'drink.jpeg'),
-              ItemProduto("Fresh Fruit Juice" , "7", 'drink2.jpeg'),
-              ItemProduto("Tea" , "7", 'drink3.jpeg'),
-              ItemProduto("sorvete" , "7", 'drink4.jpeg'),
+              ItemProduto("Melon Mix" , "2.75", 'sorvete1.jpeg'),
+              ItemProduto("Berry Yougurt" , "6.90", 'sorvete2.jpeg'),
+              ItemProduto("Strawberry Kiwi" , "3.50", 'sorvete3.jpeg'),
+              ItemProduto("Cherry Sour" , "7.80", 'sorvete4.jpeg'),
+              ItemProduto("Vanilla Crisp" , "5.99", 'sorvete5.jpeg'),
+              ItemProduto("Milk Chocolate" , "3.55", 'sorvete6.jpeg'),
+              ItemProduto("Red Velvet" , "4.55", 'sorvete7.jpeg'),
+              ItemProduto("Coffe Vanilla" , "3.00", 'sorvete8.jpeg'),
+              ItemProduto("Pineapple" , "2.00", 'sorvete9.jpeg'),
+              ItemProduto("Salted Caramel Cherry" , "9.00", 'sorvete10.jpeg'),
+              ItemProduto("Fresh Fruit Juice" , "2.50", 'drink.jpeg'),
+              ItemProduto("Tea" , "2.55", 'drink2.jpeg'),
+              ItemProduto("Mineral Water" , "1.10", 'drink3.jpeg'),
+              ItemProduto("Soda" , "3.00", 'drink4.jpeg'),
             ],
             ),
           ),
